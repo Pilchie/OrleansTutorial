@@ -1,6 +1,7 @@
-﻿namespace Snakes;
-
-public interface IHello : Orleans.IGrainWithIntegerKey
+﻿namespace Snakes
 {
-    Task<string> SayHello(string greeting);
+    public interface IHello : Orleans.IGrainWithIntegerKey
+    {
+        Task<string> SayHello(string greeting);
+    }
 }
